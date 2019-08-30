@@ -1,0 +1,12 @@
+<h1><%=  @note.title %></h1>
+<h3><%=  @note.author %></h3>
+<p><%=  @note.body %></p>
+
+<br>
+
+<button type="button" class="btn btn-light"><%= link_to 'Edit note', edit_note_path(@note) %></button>
+<button  type="button" class="btn btn-light"><%= link_to "Delete Note", @note, method: :delete %></button>
+
+<br>
+
+<button type="button" class="btn btn-light"><%= link_to 'Go Back', notes_path%></button>

@@ -1,0 +1,13 @@
+<h1><%= @note.id ? 'Edit Note' : 'Create Note' %></h1>
+<%= form_for @note do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, required: true, placeholder: 'Name'%>
+
+  <%= f.label :author %>
+  <%= f.text_field :author, required: true, placeholder: 'Author' %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body, required: true %>
+
+  <button type="button" class="btn btn-light"><%= f.submit %></button>
+<% end %>

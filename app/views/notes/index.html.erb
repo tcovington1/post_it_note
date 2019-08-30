@@ -1,0 +1,9 @@
+<h1>Notes</h1>
+
+<button type="button" class="btn btn-light"><%= link_to 'Create Note', new_note_path %></button>
+
+<ul>
+<% @notes.each do |note|%>
+  <li><%= link_to "Note", note_path(note)%></li>
+<% end %>
+</ul>

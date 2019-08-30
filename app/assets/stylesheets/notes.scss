@@ -1,0 +1,19 @@
+// Place all the styles related to the Notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+button {
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  border: 1px solid black;
+}
+
+h1, h3, p {
+  margin-left: 20px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
