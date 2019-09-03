@@ -1,13 +1,15 @@
 <h1><%= @note.id ? 'Edit Note' : 'Create Note' %></h1>
 <%= form_for @note do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title, required: true, placeholder: 'Name'%>
+  <%= f.label :title %><br>
+  <%= f.text_field(:title, {:class => 'form-control'}) %> <br>
 
-  <%= f.label :author %>
-  <%= f.text_field :author, required: true, placeholder: 'Author' %>
+  <%= f.label :author %><br>
+  <%= f.text_field :author, required: true, placeholder: 'Author' %><br>
 
-  <%= f.label :body %>
-  <%= f.text_area :body, required: true %>
+  <%= f.label :body %><br>
+  <%= f.text_area :body, required: true %><br>
 
   <button type="button" class="btn btn-light"><%= f.submit %></button>
 <% end %>
+
+<button type="button" class="btn btn-light"><%= link_to 'Back', notes_path %></button>
